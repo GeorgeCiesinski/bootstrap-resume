@@ -1,3 +1,16 @@
+.fadeout {
+  position: relative; }
+
+.fadeout:after {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to top, white 20%, rgba(255, 255, 255, 0) 80%);
+  pointer-events: none;
+  /* so the text is still selectable */ }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

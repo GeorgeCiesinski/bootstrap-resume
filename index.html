@@ -5,7 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Resume and CV - George Ciesinski</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Scripts -->
 		<script defer src="js/fontawesome-all.min.js"></script>
+		<script type="text/javascript">
+			// Toggles fadeout on faded work experience
+			function toggleFadout(id) {
+				var element = document.getElementById(id);
+				element.classList.toggle("fadeout");
+			}
+		</script>
 	</head>
 	<body class="bg-light">
 		<!-- Container with margin top -->
@@ -14,11 +22,11 @@
 
 <!-- FIRST COLUMN -->
 
-<!-- INTRODUCTION -->
+	<!-- INTRODUCTION -->
 
 				<div class="col-12 col-lg-8">
 					<!-- Margin bottom -->
-					<div class="card mb-4">
+					<div class="card mb-4 border-primary">
 						<h2 class="card-header text-center bg-dark">George Ciesinski</h2>
 						<img src="img/850x400.png" alt="Portrait of George Ciesinski" class="w-100">
 						<div class="card-body">
@@ -38,127 +46,142 @@
 						</div>
 					</div>
 
-<!-- WORK EXPERIENCE -->
+	<!-- WORK EXPERIENCE -->
 
-					<div class="card mb-4">
+					<div class="card mb-4 border-primary">
 						<h2 class="card-header text-center bg-dark">Work Experience</h2>
 						<div class="card-body">
 
-							<!-- CSC ADVOCATE -->
-							<div class="d-flex align-items-start mb-2">
-								<!-- Font awesome icon, text-primary color, margin right -->
-								<i class="fas fa-tv fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
-								<div class="flex-grow-1">
-									<h3 class="h4 mb-1">CSC Advocate</h3>
-									<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-										<h5 class="mb-0"><a href="#0" class="text-decoration-none">New Era Technology</a></h5>
-										<small class="text-uppercase fw-bold text-muted">
-											<time datetime="2017-04">April 2017</time> &ndash; Present
-										</small>
-									</div>
-								</div>
-							</div>
-							<ul class="list-unstyled">
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Created Text-Script using Python which allows users to insert text templates by typing shortcuts, saving colleagues hundreds of hours after widespread adoption
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Connect video conferences over global network and provide live operator support
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Investigate and resolve network and device issues
-								</li>
-							</ul>
-							<hr>
-
-							<!-- IT ANALYST -->
-							<div class="d-flex align-items-start mb-2">
-								<i class="fas fa-headset fa-fw fa-3x text-primary mr-2"></i>
-								<div class="flex-grow-1">
-									<h3 class="h4 mb-1">IT Analyst</h3>
-									<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-										<h5 class="mb-0"><a href="#0" class="text-decoration-none">Humber College</a></h5>
-										<small class="text-uppercase fw-bold text-muted">
-											<time datetime="2015-08">August 2015</time> &ndash; <time datetime="2017-03">March 2017</time>
-										</small>
-									</div>
-								</div>
-							</div>
-							<ul class="list-unstyled">
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Provided over-counter support to staff and students to resolve technical issues
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Carried out technical troubleshooting by e-mail and phone
-								</li>
-							</ul>
-							<hr>
-
-							<!-- INSIDE SALES REPRESENTATIVE -->
-							<div class="d-flex align-items-start mb-2">
-								<i class="fas fa-money-check-alt fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
-								<div class="flex-grow-1">
-									<h3 class="h4 mb-1">Inside Sales Representative</h3>
-									<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-										<h5 class="mb-0"><a href="#0" class="text-decoration-none">Aztec Electrical</a></h5>
-										<small class="text-uppercase fw-bold text-muted">
-											<time datetime="2020-01">August 2014</time> &ndash; <time datetime="2020-12">August 2015</time>
-										</small>
-									</div>
-								</div>
-							</div>
-							<ul class="list-unstyled">
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Liased with suppliers and Outside Sales to prepare quotes for client projects
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Ensured competitive pricing in the industry while remaining profitable
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Maintained a strong relationship with the customers
-								</li>
-							</ul>
-							<hr>
-
-							<!-- Collapsable section -->
-							<div class="collapse" id="collapse-work">
-
-								<!-- CLIENT SERVICES AGENT -->
+							<!-- Non-collapsable section -->
+							<div>
+								<!-- CSC ADVOCATE -->
 								<div class="d-flex align-items-start mb-2">
-									<i class="fas fa-comments fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
+									<!-- Font awesome icon, text-primary color, margin right -->
+									<i class="fas fa-tv fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
 									<div class="flex-grow-1">
-										<h3 class="h4 mb-1">Client Services Agent</h3>
+										<h3 class="h4 mb-1">CSC Advocate</h3>
 										<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-											<h5 class="mb-0"><a href="#0" class="text-decoration-none">Humber College</a></h5>
+											<h5 class="mb-0"><a href="#0" class="text-decoration-none">New Era Technology</a></h5>
 											<small class="text-uppercase fw-bold text-muted">
-												<time datetime="2012-09">September 2012</time> &ndash; <time datetime="2014-05">May 2014</time>
+												<time datetime="2017-04">April 2017</time> &ndash; Present
 											</small>
 										</div>
 									</div>
 								</div>
-								<ul class="list-unstyled">
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Provided over the counter support in various computer labs throughout the college
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Maintained lab equipment
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Responded to issues concerning lab equipment reported in classrooms
-									</li>
-								</ul>
-								<hr>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Created Text-Script using Python which allows users to insert text templates by typing shortcuts, saving colleagues hundreds of hours after widespread adoption
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Connect video conferences over global network and provide live operator support
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Investigate and resolve network and device issues
+										</li>
+									</ul>
+									<hr>
+								</div>
+
+
+								<!-- IT ANALYST -->
+								<div class="d-flex align-items-start mb-2">
+									<i class="fas fa-headset fa-fw fa-3x text-primary mr-2"></i>
+									<div class="flex-grow-1">
+										<h3 class="h4 mb-1">IT Analyst</h3>
+										<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+											<h5 class="mb-0"><a href="#0" class="text-decoration-none">Humber College</a></h5>
+											<small class="text-uppercase fw-bold text-muted">
+												<time datetime="2015-08">August 2015</time> &ndash; <time datetime="2017-03">March 2017</time>
+											</small>
+										</div>
+									</div>
+								</div>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Provided over-counter support to staff and students to resolve technical issues
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Carried out technical troubleshooting by e-mail and phone
+										</li>
+									</ul>
+									<hr>
+								</div>
+
+								<!-- INSIDE SALES REPRESENTATIVE -->
+								<div class="d-flex align-items-start mb-2">
+									<i class="fas fa-money-check-alt fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
+									<div class="flex-grow-1">
+										<h3 class="h4 mb-1">Inside Sales Representative</h3>
+										<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+											<h5 class="mb-0"><a href="#0" class="text-decoration-none">Aztec Electrical</a></h5>
+											<small class="text-uppercase fw-bold text-muted">
+												<time datetime="2020-01">August 2014</time> &ndash; <time datetime="2020-12">August 2015</time>
+											</small>
+										</div>
+									</div>
+								</div>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Liased with suppliers and Outside Sales to prepare quotes for client projects
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Ensured competitive pricing in the industry while remaining profitable
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Maintained a strong relationship with the customers
+										</li>
+									</ul>
+									<hr>
+								</div>
+
+								<!-- CLIENT SERVICES AGENT -->
+								<div class="fadeout" id="fade-work" >
+									<div class="d-flex align-items-start mb-2">
+										<i class="fas fa-comments fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
+										<div class="flex-grow-1">
+											<h3 class="h4 mb-1">Client Services Agent</h3>
+											<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+												<h5 class="mb-0"><a href="#0" class="text-decoration-none">Humber College</a></h5>
+												<small class="text-uppercase fw-bold text-muted">
+													<time datetime="2012-09">September 2012</time> &ndash; <time datetime="2014-05">May 2014</time>
+												</small>
+											</div>
+										</div>
+									</div>
+									<div>
+										<ul class="list-unstyled">
+											<li>
+												<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+												Provided over the counter support in various computer labs throughout the college
+											</li>
+											<li>
+												<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+												Maintained lab equipment
+											</li>
+											<li>
+												<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+												Responded to issues concerning lab equipment reported in classrooms
+											</li>
+										</ul>
+										<hr>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Collapsable section -->
+							<div class="collapse" id="collapse-work">
 
 								<!-- JUNIOR SQL DEVELOPER COOP -->
 								<div class="d-flex align-items-start mb-2">
@@ -173,21 +196,23 @@
 										</div>
 									</div>
 								</div>
-								<ul class="list-unstyled">
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Architected ETL process between two conflicting databases (MS Access, MySQL)
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Linked Kepware to MySQL to track errors, states, and part counts
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Researched alternative methods to link company databases (ODBC, VB Script)
-									</li>
-								</ul>
-								<hr>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Architected ETL process between two conflicting databases (MS Access, MySQL)
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Linked Kepware to MySQL to track errors, states, and part counts
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Researched alternative methods to link company databases (ODBC, VB Script)
+										</li>
+									</ul>
+									<hr>
+								</div>
 
 								<!-- SALES ASSOCIATE -->
 								<div class="d-flex align-items-start mb-2">
@@ -202,29 +227,33 @@
 										</div>
 									</div>
 								</div>
-								<ul class="list-unstyled">
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Provided detailed knowledge of multiple household lighting manufacturers and assist clients in purchasing lights for their homes and yards
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Assembled and mounted lights on displays for clients to see
-									</li>
-								</ul>
-								<hr>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Provided detailed knowledge of multiple household lighting manufacturers and assist clients in purchasing lights for their homes and yards
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Assembled and mounted lights on displays for clients to see
+										</li>
+									</ul>
+									<hr>
+								</div>
 
 							</div>
 
 							<!-- Button expands the collapse-work div -->
-							<button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapse-work" aria-expanded="false" aria-conrols="collapse-work">Show All</button>
+							<div class="d-flex justify-content-md-end">
+								<button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapse-work" onclick="toggleFadout('fade-work')" aria-expanded="false" aria-conrols="collapse-work">Show All</button>
+							</div>
 
 						</div>
 					</div>
 
-<!-- EDUCATION -->
+	<!-- EDUCATION -->
 
-					<div class="card mb-4">
+					<div class="card mb-4 border-primary">
 						<h2 class="card-header text-center bg-dark">Education</h2>
 						<div class="card-body">
 
@@ -258,9 +287,9 @@
 						</div>
 					</div>
 
-<!-- Testimonials -->
+	<!-- Testimonials -->
 
-					<div class="card mb-4">
+					<div class="card mb-4 border-primary">
 						<h2 class="card-header text-center bg-dark">Testimonials</h2>
 						<div class="card-body">
 							<!-- data-ride changes slides automatically -->
@@ -343,12 +372,12 @@
 <!-- SECOND COLUMN -->
 
 				<div class="col-12 col-lg-4">
-					<div class="card mb-4">
 
-<!-- CONTACT INFO -->
+	<!-- CONTACT INFO -->
 
+					<div class="card mb-4 border-primary">
 						<h2 class="card-header text-center bg-dark">Contact Info</h2>
-						<div class="card-body">
+						<div class="card-body border-primary">
 
 							<div class="d-flex align-items-start">
 								<div class="fa-layers fa-fw fa-2x me-3">
@@ -428,12 +457,16 @@
 									<i class="fas fa-circle text-primary"></i>
 									<i class="fas fa-at text-white" data-fa-transform="shrink-8"></i>
 								</div>
+
 								<div class="flex-grow-1">
 
 									<!-- StaticForms -->
 							    <form action="https://api.staticforms.xyz/submit" method="post">
 										<!-- Name -->
 										<div class="mb-3">
+											<strong>
+												Reach out to me:
+											</strong>
 											<div class="input-group input-group-sm">
 												<span class="input-group-text" id="name">Name:</span>
 												<input type="text" class="form-control" name="name" placeholder="Your name here" aria-label="Your name" aria-describedby="name">
@@ -467,10 +500,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="card mb-4">
 
-<!-- Portfolio -->
+	<!-- Portfolio -->
 
+					<div class="card mb-4 border-primary">
 						<h2 class="card-header text-center bg-dark">Portfolio</h2>
 						<div class="card-body">
 
@@ -511,141 +544,157 @@
 						</div>
 					</div>
 
-<!-- SKILLS -->
+	<!-- SKILLS -->
 
-					<div class="card mb-4">
+					<div class="card mb-4 border-primary">
 						<h2 class="card-header text-center bg-dark">Skills</h2>
 						<div class="card-body">
 							<div class="mb-3">
 
+								<!-- Non-collapsable section -->
+								<div>
+									<!-- h5 class so it is smaller size -->
 		<!-- CODING LANGUAGES -->
+									<div class="mb-3">
+										<h3 class="h5 mb-3">Coding Languages</h3>
+										<!-- PYTHON -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-python"></i>
+											Python 3
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<!-- JAVASCRIPT -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-js"></i>
+											JavaScript
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<!-- HTML5 -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-html5"></i>
+											HTML5
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<!-- CSS3 -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-css3"></i>
+											CSS3
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<!-- SASS -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-sass"></i>
+											Sass
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<!-- LESS -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-less"></i>
+											Less
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+									<hr>
 
-								<!-- h5 class so it is smaller size -->
-								<h3 class="h5 mb-3">Coding Languages</h3>
-								<!-- PYTHON -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-python"></i>
-									Python 3
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<!-- JAVASCRIPT -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-js"></i>
-									JavaScript
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<!-- HTML5 -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-html5"></i>
-									HTML5
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<!-- CSS3 -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-css3"></i>
-									CSS3
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<!-- SASS -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-sass"></i>
-									Sass
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<!-- LESS -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-less"></i>
-									Less
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-							<hr>
 
 		<!-- FRONT-END -->
 
-							<div class="mb-3">
-								<!-- h5 class so it is smaller size -->
-								<h3 class="h5 mb-3">Front-End</h3>
-								<!-- JEKYLL -->
-								<h4 class="h6 text-muted">
-									<i class="fas fa-fw fa-vial"></i>
-									Jekyll
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="mb-3 fadeout" id="fade-skill">
+										<!-- h5 class so it is smaller size -->
+										<h3 class="h5 mb-3">Front-End</h3>
+										<!-- BOOTSTRAP 5 -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-bootstrap"></i>
+											Bootstrap 5
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<!-- JEKYLL -->
+										<h4 class="h6 text-muted">
+											<i class="fas fa-fw fa-vial"></i>
+											Jekyll
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+									<hr>
+
 								</div>
-								<!-- BOOTSTRAP 5 -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-bootstrap"></i>
-									Bootstrap 5
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-							<hr>
+
 
 		<!-- Back-END -->
 
-							<div class="mb-3">
-								<!-- h5 class so it is smaller size -->
-								<h3 class="h5 mb-3">Back-End</h3>
-								<!-- FLASK -->
-								<h4 class="h6 text-muted">
-									<i class="fas fa-fw fa-flask"></i>
-									Flask
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-							<hr>
+								<!-- Collapsable section -->
+
+								<div class="collapse" id="collapse-skills">
+									<div class="mb-3">
+										<!-- h5 class so it is smaller size -->
+										<h3 class="h5 mb-3">Back-End</h3>
+										<!-- FLASK -->
+										<h4 class="h6 text-muted">
+											<i class="fas fa-fw fa-flask"></i>
+											Flask
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+									<hr>
 
 		<!-- Tools -->
 
-							<div class="mb-3">
-								<h3 class="h5 mb-3">Tools</h3>
-								<!-- GIT -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-github"></i>
-									Git
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="mb-3">
+										<h3 class="h5 mb-3">Tools</h3>
+										<!-- GIT -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-github"></i>
+											Git
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<!-- ATOM -->
+										<h4 class="h6 text-muted">
+											<i class="fas fa-fw fa-atom"></i>
+											Atom
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<!-- NPM -->
+										<h4 class="h6 text-muted">
+											<i class="fab fa-fw fa-npm"></i>
+											NPM
+										</h4>
+										<div class="progress mb-3">
+											<div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
 								</div>
-								<!-- ATOM -->
-								<h4 class="h6 text-muted">
-									<i class="fas fa-fw fa-atom"></i>
-									Atom
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+
+								<!-- Button expands the collapse-skills div -->
+								<div class="d-flex justify-content-md-end">
+									<button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapse-skills" onclick="toggleFadout('fade-skill')" aria-expanded="false" aria-conrols="collapse-work">Show All</button>
 								</div>
-								<!-- NPM -->
-								<h4 class="h6 text-muted">
-									<i class="fab fa-fw fa-npm"></i>
-									NPM
-								</h4>
-								<div class="progress mb-3">
-									<div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
+
 							</div>
-
 						</div>
-					</div>
 
+					</div>
 				</div>
 			</div>
 		</div>

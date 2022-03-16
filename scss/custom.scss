@@ -4,6 +4,25 @@ $secondary: #398AB9;
 $dark: #cae0ed;
 $light: #EEEEEE;
 
+// fadeout
+
+.fadeout {
+  position: relative;
+}
+
+.fadeout:after {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to top,
+     rgba(255,255,255, 1) 20%,
+     rgba(255,255,255, 0) 80%
+  );
+  pointer-events: none; /* so the text is still selectable */
+}
+
 // Configuration
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/variables";
