@@ -5,7 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Resume and CV - George Ciesinski</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Scripts -->
 		<script defer src="js/fontawesome-all.min.js"></script>
+		<script type="text/javascript">
+			// Toggles fadeout on faded work experience
+			function toggleFadout() {
+				var element = document.getElementById("fade-div");
+				element.classList.toggle("fadeout");
+			}
+		</script>
 	</head>
 	<body class="bg-light">
 		<!-- Container with margin top -->
@@ -44,121 +52,136 @@
 						<h2 class="card-header text-center bg-dark">Work Experience</h2>
 						<div class="card-body">
 
-							<!-- CSC ADVOCATE -->
-							<div class="d-flex align-items-start mb-2">
-								<!-- Font awesome icon, text-primary color, margin right -->
-								<i class="fas fa-tv fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
-								<div class="flex-grow-1">
-									<h3 class="h4 mb-1">CSC Advocate</h3>
-									<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-										<h5 class="mb-0"><a href="#0" class="text-decoration-none">New Era Technology</a></h5>
-										<small class="text-uppercase fw-bold text-muted">
-											<time datetime="2017-04">April 2017</time> &ndash; Present
-										</small>
-									</div>
-								</div>
-							</div>
-							<ul class="list-unstyled">
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Created Text-Script using Python which allows users to insert text templates by typing shortcuts, saving colleagues hundreds of hours after widespread adoption
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Connect video conferences over global network and provide live operator support
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Investigate and resolve network and device issues
-								</li>
-							</ul>
-							<hr>
-
-							<!-- IT ANALYST -->
-							<div class="d-flex align-items-start mb-2">
-								<i class="fas fa-headset fa-fw fa-3x text-primary mr-2"></i>
-								<div class="flex-grow-1">
-									<h3 class="h4 mb-1">IT Analyst</h3>
-									<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-										<h5 class="mb-0"><a href="#0" class="text-decoration-none">Humber College</a></h5>
-										<small class="text-uppercase fw-bold text-muted">
-											<time datetime="2015-08">August 2015</time> &ndash; <time datetime="2017-03">March 2017</time>
-										</small>
-									</div>
-								</div>
-							</div>
-							<ul class="list-unstyled">
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Provided over-counter support to staff and students to resolve technical issues
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Carried out technical troubleshooting by e-mail and phone
-								</li>
-							</ul>
-							<hr>
-
-							<!-- INSIDE SALES REPRESENTATIVE -->
-							<div class="d-flex align-items-start mb-2">
-								<i class="fas fa-money-check-alt fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
-								<div class="flex-grow-1">
-									<h3 class="h4 mb-1">Inside Sales Representative</h3>
-									<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-										<h5 class="mb-0"><a href="#0" class="text-decoration-none">Aztec Electrical</a></h5>
-										<small class="text-uppercase fw-bold text-muted">
-											<time datetime="2020-01">August 2014</time> &ndash; <time datetime="2020-12">August 2015</time>
-										</small>
-									</div>
-								</div>
-							</div>
-							<ul class="list-unstyled">
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Liased with suppliers and Outside Sales to prepare quotes for client projects
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Ensured competitive pricing in the industry while remaining profitable
-								</li>
-								<li>
-									<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-									Maintained a strong relationship with the customers
-								</li>
-							</ul>
-							<hr>
-
-							<!-- Collapsable section -->
-							<div class="collapse" id="collapse-work">
-
-								<!-- CLIENT SERVICES AGENT -->
+							<!-- Non-collapsable section -->
+							<div>
+								<!-- CSC ADVOCATE -->
 								<div class="d-flex align-items-start mb-2">
-									<i class="fas fa-comments fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
+									<!-- Font awesome icon, text-primary color, margin right -->
+									<i class="fas fa-tv fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
 									<div class="flex-grow-1">
-										<h3 class="h4 mb-1">Client Services Agent</h3>
+										<h3 class="h4 mb-1">CSC Advocate</h3>
 										<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-											<h5 class="mb-0"><a href="#0" class="text-decoration-none">Humber College</a></h5>
+											<h5 class="mb-0"><a href="#0" class="text-decoration-none">New Era Technology</a></h5>
 											<small class="text-uppercase fw-bold text-muted">
-												<time datetime="2012-09">September 2012</time> &ndash; <time datetime="2014-05">May 2014</time>
+												<time datetime="2017-04">April 2017</time> &ndash; Present
 											</small>
 										</div>
 									</div>
 								</div>
-								<ul class="list-unstyled">
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Provided over the counter support in various computer labs throughout the college
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Maintained lab equipment
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Responded to issues concerning lab equipment reported in classrooms
-									</li>
-								</ul>
-								<hr>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Created Text-Script using Python which allows users to insert text templates by typing shortcuts, saving colleagues hundreds of hours after widespread adoption
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Connect video conferences over global network and provide live operator support
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Investigate and resolve network and device issues
+										</li>
+									</ul>
+									<hr>
+								</div>
+
+
+								<!-- IT ANALYST -->
+								<div class="d-flex align-items-start mb-2">
+									<i class="fas fa-headset fa-fw fa-3x text-primary mr-2"></i>
+									<div class="flex-grow-1">
+										<h3 class="h4 mb-1">IT Analyst</h3>
+										<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+											<h5 class="mb-0"><a href="#0" class="text-decoration-none">Humber College</a></h5>
+											<small class="text-uppercase fw-bold text-muted">
+												<time datetime="2015-08">August 2015</time> &ndash; <time datetime="2017-03">March 2017</time>
+											</small>
+										</div>
+									</div>
+								</div>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Provided over-counter support to staff and students to resolve technical issues
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Carried out technical troubleshooting by e-mail and phone
+										</li>
+									</ul>
+									<hr>
+								</div>
+
+								<!-- INSIDE SALES REPRESENTATIVE -->
+								<div class="d-flex align-items-start mb-2">
+									<i class="fas fa-money-check-alt fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
+									<div class="flex-grow-1">
+										<h3 class="h4 mb-1">Inside Sales Representative</h3>
+										<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+											<h5 class="mb-0"><a href="#0" class="text-decoration-none">Aztec Electrical</a></h5>
+											<small class="text-uppercase fw-bold text-muted">
+												<time datetime="2020-01">August 2014</time> &ndash; <time datetime="2020-12">August 2015</time>
+											</small>
+										</div>
+									</div>
+								</div>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Liased with suppliers and Outside Sales to prepare quotes for client projects
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Ensured competitive pricing in the industry while remaining profitable
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Maintained a strong relationship with the customers
+										</li>
+									</ul>
+									<hr>
+								</div>
+
+								<!-- CLIENT SERVICES AGENT -->
+								<div class="fadeout" id="fade-div" >
+									<div class="d-flex align-items-start mb-2">
+										<i class="fas fa-comments fa-fw fa-3x text-primary mr-2" data-fa-transform="shrink-5"></i>
+										<div class="flex-grow-1">
+											<h3 class="h4 mb-1">Client Services Agent</h3>
+											<div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+												<h5 class="mb-0"><a href="#0" class="text-decoration-none">Humber College</a></h5>
+												<small class="text-uppercase fw-bold text-muted">
+													<time datetime="2012-09">September 2012</time> &ndash; <time datetime="2014-05">May 2014</time>
+												</small>
+											</div>
+										</div>
+									</div>
+									<div>
+										<ul class="list-unstyled">
+											<li>
+												<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+												Provided over the counter support in various computer labs throughout the college
+											</li>
+											<li>
+												<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+												Maintained lab equipment
+											</li>
+											<li>
+												<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+												Responded to issues concerning lab equipment reported in classrooms
+											</li>
+										</ul>
+										<hr>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Collapsable section -->
+							<div class="collapse" id="collapse-work">
 
 								<!-- JUNIOR SQL DEVELOPER COOP -->
 								<div class="d-flex align-items-start mb-2">
@@ -173,21 +196,23 @@
 										</div>
 									</div>
 								</div>
-								<ul class="list-unstyled">
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Architected ETL process between two conflicting databases (MS Access, MySQL)
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Linked Kepware to MySQL to track errors, states, and part counts
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Researched alternative methods to link company databases (ODBC, VB Script)
-									</li>
-								</ul>
-								<hr>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Architected ETL process between two conflicting databases (MS Access, MySQL)
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Linked Kepware to MySQL to track errors, states, and part counts
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Researched alternative methods to link company databases (ODBC, VB Script)
+										</li>
+									</ul>
+									<hr>
+								</div>
 
 								<!-- SALES ASSOCIATE -->
 								<div class="d-flex align-items-start mb-2">
@@ -202,22 +227,24 @@
 										</div>
 									</div>
 								</div>
-								<ul class="list-unstyled">
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Provided detailed knowledge of multiple household lighting manufacturers and assist clients in purchasing lights for their homes and yards
-									</li>
-									<li>
-										<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
-										Assembled and mounted lights on displays for clients to see
-									</li>
-								</ul>
-								<hr>
+								<div>
+									<ul class="list-unstyled">
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Provided detailed knowledge of multiple household lighting manufacturers and assist clients in purchasing lights for their homes and yards
+										</li>
+										<li>
+											<i class="fas fa-angle-right fa-fw text-primary mr-2"></i>
+											Assembled and mounted lights on displays for clients to see
+										</li>
+									</ul>
+									<hr>
+								</div>
 
 							</div>
 
 							<!-- Button expands the collapse-work div -->
-							<button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapse-work" aria-expanded="false" aria-conrols="collapse-work">Show All</button>
+							<button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapse-work" onclick="toggleFadout()" aria-expanded="false" aria-conrols="collapse-work">Show All</button>
 
 						</div>
 					</div>
